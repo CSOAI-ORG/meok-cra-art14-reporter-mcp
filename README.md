@@ -1,88 +1,78 @@
-# MEOK CRA Article 14 Reporter MCP
+# Meok Cra Art14 Reporter MCP
 
-> ## 🧱 Part of the MEOK Governance Substrate (£499/mo)
-> See [meok.ai/governance](https://meok.ai/governance).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_cra_art14_reporter_mcp/)
 
-# EU Cyber Resilience Act Article 14 — actively-exploited-vulnerability reporter
+> EU CRA Article 14 actively-exploited-vulnerability reporter - ENISA + CSIRT payload
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-cra-art14-reporter-mcp -->
+EU CRA Article 14 actively-exploited-vulnerability reporter - ENISA + CSIRT payload. 11 Sept 2026 cliff. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/meok-cra-art14-reporter-mcp)](https://pypi.org/project/meok-cra-art14-reporter-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this does
+## 🚀 Quick Start
 
-EU Cyber Resilience Act (Regulation 2024/2847) Article 14 requires manufacturers of products with digital elements to notify **ENISA + national CSIRT** when an actively-exploited vulnerability is discovered.
+```bash
+# Install via pip
+pip install meok_cra_art14_reporter_mcp
 
-**Effective: 11 September 2026.**
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-cra-art14-reporter-mcp --client claude
+```
 
-The clock is brutal:
-- **24 hours** — early warning to ENISA + national CSIRT (Article 14(2)(a))
-- **72 hours** — incident notification with mitigation (Article 14(2)(b))
-- **14 days** — final report after the vulnerability is resolved (Article 14(2)(c))
+## ✨ Features
 
-This MCP:
-- Classifies vulnerabilities against the "actively exploited" test
-- Generates ENISA + national-CSIRT payloads
-- Tracks the three clocks per case
-- Maps the right national CSIRT (DE: BSI, FR: ANSSI, NL: NCSC-NL, etc.)
-- HMAC-signs the chain for audit
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Tools
+## 📖 Documentation
 
-| Tool | Purpose |
-|---|---|
-| `classify_vulnerability(description, cvss_v3?, exploited_in_wild?)` | Does this trigger Article 14? |
-| `open_vulnerability_case(cve_id, product, description, cvss, ...)` | Start the 3-clock tracker |
-| `generate_enisa_payload(case_id, mitigation_steps?)` | ENISA + national-CSIRT submission |
-| `check_clock_status(case_id)` | Hours remaining per clock |
-| `list_national_csirts()` | EU national CSIRT contact map (10+ countries) |
-| `check_cra_status()` | Days until 11 Sept 2026 |
-| `sign_chain(case_id)` | HMAC-seal the full case for audit |
+- [Full Documentation](https://docs.meok.ai/meok-cra-art14-reporter-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Sister MCPs
+## 🛡️ Compliance
 
-Part of the MEOK **Governance** substrate:
+This MCP server is built with **EU AI Act compliance** built-in:
 
-- `cra-compliance-mcp` — full CRA Annex I classifier + SBOM + conformity
-- `agent-incident-relay-mcp` — broadcasts Article 14 to AI Act + DORA + NIS2 simultaneously
-- `sbom-cyclonedx-mcp` — SBOM for the affected product
-- `mitre-attack-mcp` — exploit-technique mapping
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Pricing
+## 🏢 Enterprise
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| Governance Substrate | £499/mo |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+Need custom development, SLA guarantees, or white-label deployment?
 
-Buy: https://meok.ai/governance
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-## Wire it up — full stack
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-This MCP composes with the broader MEOK chain. See [meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the 6-MCP chain that turns one incident into one auditor-defensible event.
+## 🤝 Part of the MEOK Ecosystem
 
-## Licence
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-<!-- BUY-LADDER:START -->
+## 📜 License
 
-## 💸 Try MEOK in 30 seconds — instant buy ladder
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-| Tier | Price | What you get | Stripe |
-|---|---|---|---|
-| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
-| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
-| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+---
 
-> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
-> Verify any signed report at <https://meok.ai/verify>.
-
-<!-- BUY-LADDER:END -->
-
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
