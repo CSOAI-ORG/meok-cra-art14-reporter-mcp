@@ -1,0 +1,23 @@
+# meok-cra-art14-reporter-mcp
+
+> MEOK CRA Article 14 Reporter MCP — actively-exploited-vulnerability notification with 24h/72h/14d clocks. ENISA + national CSIRT payload generator. 11 Sept 2026 cliff. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- classify_vulnerability
+- open_vulnerability_case
+- generate_enisa_payload
+- check_clock_status
+- list_national_csirts
+- check_cra_status
+- sign_chain
+
+## Install
+```
+pip install meok-cra-art14-reporter-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-cra-art14-reporter-mcp/
+- Docs: https://meok.ai
