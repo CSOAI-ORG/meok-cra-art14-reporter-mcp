@@ -1,0 +1,2 @@
+[console_scripts]
+meok-cra-art14-reporter-mcp = server:main
