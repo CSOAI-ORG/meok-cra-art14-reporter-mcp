@@ -1,0 +1,86 @@
+{
+  "name": "meok-cra-art14-reporter-mcp",
+  "description": "MEOK CRA Article 14 Reporter MCP \u2014 actively-exploited-vulnerability notification with 24h/72h/14d",
+  "url": "https://proofof.ai/scorecard/meok-cra-art14-reporter-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "classify_vulnerability",
+      "name": "Classify Vulnerability",
+      "description": "classify_vulnerability via meok-cra-art14-reporter-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "open_vulnerability_case",
+      "name": "Open Vulnerability Case",
+      "description": "open_vulnerability_case via meok-cra-art14-reporter-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_enisa_payload",
+      "name": "Generate Enisa Payload",
+      "description": "generate_enisa_payload via meok-cra-art14-reporter-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_clock_status",
+      "name": "Check Clock Status",
+      "description": "check_clock_status via meok-cra-art14-reporter-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_national_csirts",
+      "name": "List National Csirts",
+      "description": "list_national_csirts via meok-cra-art14-reporter-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_cra_status",
+      "name": "Check Cra Status",
+      "description": "check_cra_status via meok-cra-art14-reporter-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_chain",
+      "name": "Sign Chain",
+      "description": "sign_chain via meok-cra-art14-reporter-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
