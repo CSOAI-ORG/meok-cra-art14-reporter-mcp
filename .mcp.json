@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "meok-cra-art14-reporter-mcp": {
+      "command": "uvx",
+      "args": [
+        "meok-cra-art14-reporter-mcp"
+      ]
+    }
+  }
+}
