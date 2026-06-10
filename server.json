@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/meok-cra-art14-reporter-mcp",
-  "version": "1.0.0",
-  "description": "MEOK CRA Article 14 Reporter MCP \u2014 actively-exploited-vulnerability notification with 24h/72h/14d",
+  "version": "1.0.1",
+  "description": "MEOK CRA Article 14 Reporter MCP — actively-exploited-vulnerability notification with 24h/72h/14d",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/meok-cra-art14-reporter-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
     {
       "registryType": "pypi",
       "identifier": "meok-cra-art14-reporter-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"
