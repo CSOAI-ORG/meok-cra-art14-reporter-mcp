@@ -1,0 +1,144 @@
+{
+  "name": "Meok Cra Art14 Reporter Mcp",
+  "version": "1.0.1",
+  "url": "https://mcp.meok.ai/meok-cra-art14-reporter-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK CRA Article 14 Reporter MCP — actively-exploited-vulnerability notification with 24h/72h/14d clocks. ENISA + national CSIRT payload generator. 11 Sept 2026 cliff. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "classify_vulnerability",
+      "name": "Classify Vulnerability",
+      "description": "Classify Vulnerability — a tool of the meok-cra-art14-reporter-mcp MCP.",
+      "tags": [
+        "cra"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "open_vulnerability_case",
+      "name": "Open Vulnerability Case",
+      "description": "Open Vulnerability Case — a tool of the meok-cra-art14-reporter-mcp MCP.",
+      "tags": [
+        "cra"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "generate_enisa_payload",
+      "name": "Generate Enisa Payload",
+      "description": "Generate Enisa Payload — a tool of the meok-cra-art14-reporter-mcp MCP.",
+      "tags": [
+        "cra"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_clock_status",
+      "name": "Check Clock Status",
+      "description": "Check Clock Status — a tool of the meok-cra-art14-reporter-mcp MCP.",
+      "tags": [
+        "cra"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_national_csirts",
+      "name": "List National Csirts",
+      "description": "List National Csirts — a tool of the meok-cra-art14-reporter-mcp MCP.",
+      "tags": [
+        "cra"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_cra_status",
+      "name": "Check Cra Status",
+      "description": "Check Cra Status — a tool of the meok-cra-art14-reporter-mcp MCP.",
+      "tags": [
+        "cra"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_chain",
+      "name": "Sign Chain",
+      "description": "Sign Chain — a tool of the meok-cra-art14-reporter-mcp MCP.",
+      "tags": [
+        "cra"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-cra-art14-reporter-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}

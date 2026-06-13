@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-cra-art14-reporter-mcp"
-version = "1.0.1"
+version = "1.0.3"
 description = "MEOK CRA Article 14 Reporter MCP — actively-exploited-vulnerability notification with 24h/72h/14d clocks. ENISA + national CSIRT payload generator. 11 Sept 2026 cliff. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
